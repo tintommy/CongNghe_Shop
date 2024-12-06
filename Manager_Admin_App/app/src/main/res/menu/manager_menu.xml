@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/navCaNhan"
+            android:icon="@drawable/baseline_person_24"
+            android:iconTint="@color/white"
+            android:title="Thông tin cá nhân "
+
+            />
+        <item
+            android:id="@+id/navTaiKhoanNhanVien"
+            android:icon="@drawable/baseline_groups_24"
+            android:title="Quản lý tài khoản nhân viên" />
+        <item
+            android:id="@+id/navThongKeSanPham"
+            android:icon="@drawable/baseline_list_24"
+            android:title="Xem thống kê sản phẩm" />
+        <item
+            android:id="@+id/navThongKeDonHang"
+            android:icon="@drawable/baseline_article_24"
+            android:title="Xem thống kê đơn hàng" />
+<item
+            android:id="@+id/navThongKeNhapHang"
+            android:icon="@drawable/baseline_receipt_24"
+            android:title="Xem lịch sử nhập hàng " />
+
+
+
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/navDangXuat"
+                android:icon="@drawable/baseline_logout_24"
+                android:title="Đăng xuất"
+                />
+        </menu>
+
+    </item>
+</menu>

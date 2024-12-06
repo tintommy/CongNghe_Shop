@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/background"
+    tools:context=".fragments.adminFragments.QuanLyPhieuNhapFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Quản Lý Phiếu Nhập"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        />
+
+    <Button
+        android:id="@+id/btnAddNewReceipt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/blue"
+        android:drawableLeft="@drawable/baseline_add_24"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/white"
+        android:padding="10dp"
+        android:text="Tạo phiếu nhập mới"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnReceiptHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#168F84"
+        android:drawableLeft="@drawable/baseline_schedule_24"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/white"
+        android:padding="10dp"
+        android:text="Xem lịch sử nhập"
+        android:textColor="@color/white" />
+
+</LinearLayout>

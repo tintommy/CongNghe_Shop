@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#D8D8D8"/> <!-- Màu nền của EditText -->
+    <corners android:radius="16dp"/> <!-- Bo góc với bán kính 16dp -->
+    <stroke android:width="2dp" android:color="#E9CDCDCD"/> <!-- Đường viền (tùy chọn) -->
+</shape>

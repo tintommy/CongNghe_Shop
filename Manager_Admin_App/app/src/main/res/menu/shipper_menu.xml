@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/navDonHangShip"
+            android:icon="@drawable/baseline_receipt_24"
+            android:iconTint="@color/white"
+            android:title="Danh sách đơn hàng"
+
+            />
+
+
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/navCaNhan"
+                android:icon="@drawable/baseline_person_24"
+                android:iconTint="@color/white"
+                android:title="Thông tin cá nhân "
+
+                />
+            <item
+                android:id="@+id/navDangXuat"
+                android:icon="@drawable/baseline_logout_24"
+                android:title="Đăng xuất"
+                />
+        </menu>
+
+    </item>
+</menu>

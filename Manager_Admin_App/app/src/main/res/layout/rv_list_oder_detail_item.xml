@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/iphone"
+        android:scaleType="fitCenter"
+        android:id="@+id/ivProductAvatar"
+        android:layout_weight="1"
+        />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="9">
+        <TextView
+            android:id="@+id/tvProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="iPhone 15 pro max"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/tvProductQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số lượng: 1"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textAlignment="textEnd"
+            />
+        <TextView
+            android:id="@+id/tvProductPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="123.456.789đ"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textColor="#0048FF"
+            android:textAlignment="textEnd"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admin_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/quanLyDonHangFragment"
+        android:name="com.example.tttn_electronicsstore_manager_admin_app.fragments.adminFragments.QuanLyDonHangFragment"
+        android:label="fragment_quan_ly_don_hang"
+        tools:layout="@layout/fragment_quan_ly_don_hang" />
+    <fragment
+        android:id="@+id/caNhanFragment"
+        android:name="com.example.tttn_electronicsstore_manager_admin_app.fragments.adminFragments.CaNhanFragment"
+        android:label="fragment_ca_nhan"
+        tools:layout="@layout/fragment_ca_nhan" />
+    <fragment
+        android:id="@+id/quanLyThuongHieuFragment"
+        android:name="com.example.tttn_electronicsstore_manager_admin_app.fragments.adminFragments.QuanLyThuongHieuFragment"
+        android:label="fragment_quan_li_thuong_hieu"
+        tools:layout="@layout/fragment_quan_li_thuong_hieu" />
+    <fragment
+        android:id="@+id/quanLySanPhamFragment"
+        android:name="com.example.tttn_electronicsstore_manager_admin_app.fragments.adminFragments.QuanLySanPhamFragment"
+        android:label="fragment_quan_ly_san_pham"
+        tools:layout="@layout/fragment_quan_ly_san_pham" />
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.tttn_electronicsstore_manager_admin_app.fragments.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" />
+</navigation>

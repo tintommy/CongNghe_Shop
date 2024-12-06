@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/OTPFragment"
+        android:name="com.example.tttn_electronicsstore_customer_app.fragments.login_signup.OTPFragment"
+        android:label="fragment_o_t_p"
+        tools:layout="@layout/fragment_o_t_p" >
+        <action
+            android:id="@+id/action_OTPFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.example.tttn_electronicsstore_customer_app.fragments.login_signup.SignupFragment"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup" >
+        <action
+            android:id="@+id/action_signupFragment_to_OTPFragment"
+            app:destination="@id/OTPFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.tttn_electronicsstore_customer_app.fragments.login_signup.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_forgetPassFragment"
+            app:destination="@id/forgetPassFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgetPassFragment"
+        android:name="com.example.tttn_electronicsstore_customer_app.fragments.login_signup.ForgetPassFragment"
+        android:label="fragment_forget_pass"
+        tools:layout="@layout/fragment_forget_pass" >
+        <action
+            android:id="@+id/action_forgetPassFragment_to_forgetPassFragment2"
+            app:destination="@id/forgetPassFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgetPassFragment2"
+        android:name="com.example.tttn_electronicsstore_customer_app.fragments.login_signup.ForgetPassFragment2"
+        android:label="fragment_forget_pass2"
+        tools:layout="@layout/fragment_forget_pass2" >
+        <action
+            android:id="@+id/action_forgetPassFragment2_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+</navigation>

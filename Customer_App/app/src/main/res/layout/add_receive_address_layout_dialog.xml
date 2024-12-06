@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_layout_rounded_corners"
+            android:backgroundTint="#DEFBFF"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Thêm địa chỉ mới"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etReceiveName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:backgroundTint="@color/white"
+                android:hint="Tên địa chỉ (VD: văn phòng, nhà ở)"
+                android:padding="20dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/etReceiverName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:background="@drawable/rounded_edittext"
+                android:backgroundTint="@color/white"
+                android:hint="Tên người nhận"
+                android:padding="20dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/etReceiverPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:backgroundTint="@color/white"
+                android:hint="Số điện thoại"
+                android:inputType="number"
+                android:padding="20dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tỉnh / thành phố: "
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                />
+            <Spinner
+                android:id="@+id/spProvince"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/bg_spinner"
+                android:backgroundTint="@color/white"
+
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quận / huyện: "
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                />
+            <Spinner
+                android:id="@+id/spDistrict"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_spinner"
+                android:backgroundTint="@color/white"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phường / xã: "
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                />
+            <Spinner
+                android:id="@+id/spWard"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_spinner"
+                android:backgroundTint="@color/white"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/etDetailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:background="@drawable/rounded_edittext"
+                android:backgroundTint="@color/white"
+                android:hint="Địa chỉ chi tiết"
+                android:padding="20dp"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btnAddAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#2196F3"
+                android:padding="10dp"
+                android:text="Thêm địa chỉ"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

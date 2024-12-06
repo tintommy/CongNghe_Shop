@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/navPhieuNhap"
+            android:icon="@drawable/baseline_receipt_24"
+            android:iconTint="@color/white"
+            android:title="Quản lý phiếu nhập"
+
+            />
+        <item
+            android:id="@+id/navThuongHieu"
+            android:icon="@drawable/baseline_factory_24"
+            android:title="Quản lý thương hiệu" />
+        <item
+            android:id="@+id/navLoai"
+            android:icon="@drawable/baseline_category_24"
+            android:title="Quản lý loại" />
+        <item
+            android:id="@+id/navSanPham"
+            android:icon="@drawable/baseline_list_24"
+            android:title="Quản lý sản phẩm" />
+
+        <item
+            android:id="@+id/navDonHang"
+            android:icon="@drawable/baseline_article_24"
+            android:title="Quản lý đơn hàng" />
+        <item
+            android:id="@+id/navTaiKhoanKhachHang"
+            android:icon="@drawable/baseline_groups_24"
+            android:title="Quản lý tài khoản khách hàng" />
+
+        <item
+            android:id="@+id/navTinNhan"
+            android:icon="@drawable/baseline_chat_24"
+            android:title="Tin nhắn" />
+
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/navCaNhan"
+                android:icon="@drawable/baseline_person_24"
+                android:iconTint="@color/white"
+                android:title="Thông tin cá nhân "
+
+                />
+            <item
+                android:id="@+id/navDangXuat"
+                android:icon="@drawable/baseline_logout_24"
+                android:title="Đăng xuất"
+                />
+        </menu>
+
+    </item>
+</menu>

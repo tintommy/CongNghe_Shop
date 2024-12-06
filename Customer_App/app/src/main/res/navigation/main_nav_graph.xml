@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.example.tttn_electronicsstore_customer_app.fragments.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_accountFragment_to_receiveAddressManagerFragment"
+            app:destination="@id/receiveAddressManagerFragment" />
+        <action
+            android:id="@+id/action_accountFragment_self"
+            app:destination="@id/accountFragment" />
+        <action
+            android:id="@+id/action_accountFragment_to_personalInforFragment"
+            app:destination="@id/personalInforFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.tttn_electronicsstore_customer_app.fragments.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" >
+        <action
+            android:id="@+id/action_cartFragment_to_productFragment"
+            app:destination="@id/productFragment" />
+        <action
+            android:id="@+id/action_cartFragment_to_createOrderFragment"
+            app:destination="@id/createOrderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.tttn_electronicsstore_customer_app.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_productFragment"
+            app:destination="@id/productFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderFragment"
+        android:name="com.example.tttn_electronicsstore_customer_app.fragments.OrderFragment"
+        android:label="fragment_order"
+        tools:layout="@layout/fragment_order" >
+        <action
+            android:id="@+id/action_orderFragment_to_orderDetailFragment"
+            app:destination="@id/orderDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.tttn_electronicsstore_customer_app.fragments.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_productFragment"
+            app:destination="@id/productFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="com.example.tttn_electronicsstore_customer_app.fragments.ProductFragment"
+        android:label="fragment_product"
+        tools:layout="@layout/fragment_product" >
+        <action
+            android:id="@+id/action_productFragment_to_compareFragment"
+            app:destination="@id/compareFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createOrderFragment"
+        android:name="com.example.tttn_electronicsstore_customer_app.fragments.CreateOrderFragment"
+        android:label="fragment_create_order"
+        tools:layout="@layout/fragment_create_order" />
+    <fragment
+        android:id="@+id/orderDetailFragment"
+        android:name="com.example.tttn_electronicsstore_customer_app.fragments.orderFragments.OrderDetailFragment"
+        android:label="OrderDetailFragment" />
+    <fragment
+        android:id="@+id/receiveAddressManagerFragment"
+        android:name="com.example.tttn_electronicsstore_customer_app.fragments.ReceiveAddressManagerFragment"
+        android:label="fragment_receive_address_manager"
+        tools:layout="@layout/fragment_receive_address_manager" />
+    <fragment
+        android:id="@+id/compareFragment"
+        android:name="com.example.tttn_electronicsstore_customer_app.fragments.CompareFragment"
+        android:label="fragment_compare"
+        tools:layout="@layout/fragment_compare" />
+    <fragment
+        android:id="@+id/personalInforFragment"
+        android:name="com.example.tttn_electronicsstore_customer_app.fragments.PersonalInforFragment"
+        android:label="fragment_personal_infor"
+        tools:layout="@layout/fragment_personal_infor" />
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.example.tttn_electronicsstore_customer_app.fragments.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" >
+        <action
+            android:id="@+id/action_categoryFragment_to_productFragment"
+            app:destination="@id/productFragment" />
+    </fragment>
+</navigation>
