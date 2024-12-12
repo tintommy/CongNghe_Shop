@@ -49,3 +49,8 @@
   <img src="images/orderDetail.png" alt="Order Detail" width="250px">
   <img src="images/chat.png" alt="Chat" width="250px">
 </div>
+
+<div align="center">
+  <img src="images/manager/order.png" alt="Order Manager" width="250px">
+  <img src="images/manager/product.png" alt="Order Detail" width="250px">
+</div>
