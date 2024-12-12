@@ -1,4 +1,19 @@
+## Kiến trúc
 
+- Frontend: Mobile Native (Kotlin), MVVM
+- Backend: Spring Boot
+- Cơ sở dữ liệu: MySQL
+- Lưu trữ hình ảnh: Firebase Storage
+
+## **Tính năng chính**
+
+- Đăng nhập và đăng ký người dùng.
+- Đăng nhập với Google
+- Chat realtime
+- Quản lý giỏ hàng, thanh toán trực tuyến.
+- Theo dõi trạng thái đơn hàng.
+- Bộ lọc và so sánh sản phẩm.
+- Hệ thống đánh giá và nhận xét.
 
 ## Một vài giao diện trong ứng dụng
 
